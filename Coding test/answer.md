@@ -8,7 +8,7 @@ f(1) = 1
 f(n) = f(n - 1) + f(n - 2)
 ```
 
-> (1) Please create a program to finf `f(n)`.(You can write in any language that you are good at.)
+(1) Please create a program to finf `f(n)`.(You can write in any language that you are good at.)
 
 My answer:
 
@@ -26,7 +26,7 @@ function f(n: number, cache = new Map<number, bigint>()): bigint {
 }
 ```
 
-> (2) Use the program you created in (1) to find `f(9292)`.
+(2) Use the program you created in (1) to find `f(9292)`.
 
 My answer:
 
@@ -134,8 +134,8 @@ arrive exactly at the finishing point.
 
 My answer:
 
-假设1：如果距离终点 `k` 步，此时投出 `n > k`，需要重新投掷骰子，直到 `n <= k`。
-假设2：如果距离终点 `k` 步，此时投出 `n >= k`，都算抵达终点。
+- 假设1：如果距离终点 `k` 步，此时投出 `n > k`，需要重新投掷骰子，直到 `n <= k`。
+- 假设2：如果距离终点 `k` 步，此时投出 `n >= k`，都算抵达终点。
 
 ```ts
 function roll(n: number): [bigint, bigint] {
