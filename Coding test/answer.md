@@ -27,7 +27,7 @@ function f1(n: number, cache = new Map<number, bigint>()): bigint {
   return a1 + a2
 }
 
-function f2(n: number) {
+function f2(n: number): bigint {
   if (n <= 1) return BigInt(n)
   let first = 0n;
   let second = 1n;
