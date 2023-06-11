@@ -197,3 +197,53 @@ roll(8) = [125,636]
 roll(9) = [248,1261]
 roll(610) = [14527490260516100855695859704819627818108010882741117227956927412305738742399171256642436462028811566617818991926058940988565927870172608545709804976244851391054850231415387973537361,73849855950815996394278522913853784604405917481614187238382106745178216991023997052521433120687596280098328364751220771629394035701614451662263927598541594137065194704725102581132796]
 ```
+
+## Q4
+
+Please tell us about the technologies you frequently use.
+
+| <center>Levels of competency</center> | <center>Name of programming language(Year of experience) <br>Example: Java (3years)</center>|
+| -- | -- |
+| Most Proficient <br>(Please give one answer only) | JavaScript/TypeScript (4years)|
+| Familiar with | Rust (1years) |
+| Minimal experience | Python (just a little) |
+
+| <center>Question</center> | <center>Answer</center> |
+| -- | -- |
+| On which platform do you have <b>the most development experience</b> (e.g. iOS apps, Android apps, Linux server, Windows server, etc.)? | Web Applications |
+| On which platforms are you <b>interested in</b> developing (regardless of experience) (e.g. iOS apps, Android apps, Linux server, Windows server, etc.)? | Web Applications / Tauri to build Cross-platform application |
+
+| <center>Category</center> | <center>Example</center> | <center>Your Experience</center> |
+| -- | -- | -- |
+| Object Containers | EJB, Spring Framework, Guice, Seasar2 | - |
+| MVC | Spring MVC, Strurs 2, Play, Grails | - |
+| ORM | MyBatis, Hibernate | Mongoose |
+| Testing | JUnit, TestNG, Ccucumber, Selenium, WebDriver | Vitest |
+| IDE/Editor | Eclipse, IntelliJ IDEA, vim, Emacs, Sublime Text, Atom, Visual Studio, Netbeans | Visual Studio Code |
+| UML/Diagram | Enterprise Architect, Rational XDE, LucidChart | - |
+| SCM | CVS, Subversion, Git, Mercurial, Perforce, Visual SourceSafe| Git |
+| Builds | Ant, Maven, Gradle, Ivy, sbt | Vite, Webpack |
+| CI/Quality | Jenkins, Bamboo, Sonar, CircleCI | Jenkins, Github Actions, ESlint |
+| Java Profilers | Eclipse TPTP, YourKit, JProfiler | - |
+| Web Applications Performance Profilers | JMeter, Grinder | - |
+| Issue Trackers | JIRA, Redmine, Bugzilla, Trello | - |
+| Agile Processes | Scrum, XP, Kanban | Scrum |
+| Social Coding Code Review | GitHub, Bitbucket, Stash, Crucible/FishEye | GitHub |
+
+## Q5
+
+Please answer the questions belows.
+
+| <center>Question</center> | <center>Answer</center> |
+| -- | -- |
+| What specifically do you want to achieve at Comiru? | Front-end development engineer |
+| What kind of Web or smartphone applications are you interested in? <br>* Please name at least one app that you always use, and at least one that you have found out about within the last year. | Bilibili / NGA / Procreate / iGuzheng<sup>+</sup> |
+| List up to 3 kinds of technology you have gotten interested in recently, and why you are interested in them. | 1. Rust (最近一年在学的新语言，类型安全，性能高，独特的所有权机制) <br> 2. Vue3/Nuxt3 (主要的技术栈) <br> 3. React (以及同时在学的前端框架，JSX/TSX) |
+| 1. What is the most technically difficult or interesting thing you have experienced in development or programming so far? <br> 2. Why did you find it difficult / interesting? <br> 3. What was your solution, and how did you implement it? (Please answer in as much detail as possible)  | 在学 Rust 的过程中，我写了一个开源的库 <a href="https://github.com/JiatLn/color-art" target="_blank">Color Art</a>，是一个颜色相关的库，主要用于对颜色处理，包括了颜色空间的转化，如 RGB 转 HSL/CMYK 等，还有对颜色进行正片叠底、线性减淡等操作。这里面涉及的算法有些比较复杂，例如 RGB 转 XYZ 的变换，涉及到一些矩阵的运算，还有可参考的文献比较少，需要去阅读其它语言框架的源码，如 C++/Python 等。还要去查 W3C 上对应的 RFC，并将其“翻译”成 Rust 的代码。还有就是对于一些 API 的设计，也重构了好几个版本，参考了其它开源的仓库的设计。还有遇到一个问题，有一个功能是根据用户的输入的字符串去解析成对应的颜色，这里需要对用户的输入进行解析，由于颜色空间有很多种，每种需要的数据格式会有不同，需要考虑的地方很多，以及解析之后的数值是否满足该颜色空间的取值范围，都需要去判断。之前解决方案是判断每种输入的前缀，然后各自写一个处理函数来解析，目前打算写一个简易的 AST 解析器做词法分析，来去解析处理用户输入。|
+| Public repository URLs (e.g.: GitHub, Bitbucket, etc.) | 1. color-art: https://github.com/JiatLn/color-art <br> 2. vvtt: https://github.com/JiatLn/vvtt <br> 3. ri: https://github.com/JiatLn/ri <br> 4. vue-fliplay: https://github.com/JiatLn/vue-fliplay <br> 5. more to see: https://github.com/JiatLn?tab=repositories&type=source |
+| Public social accounts (if applicable; e.g.: Twitter, Facebook, etc.) | GitHub: https://github.com/JiatLn |
+| Which 3 technical books or articles have made a big impact on you? | 1. <a href="https://antfu.me/posts/reimagine-atomic-css" target="_blank">Reimagine Atomic CSS</a> <br> 2. 《Vue.js 设计与实现》 <br> 3. 《Rust 权威指南》 |
+
+---
+
+<center><b>END</b></center>
