@@ -1,4 +1,4 @@
-#### 对象字面量增强写法
+### 对象字面量增强写法
 
 1. 变量名简写
 2. 函数名简写
@@ -15,7 +15,7 @@ const obj = {
 }
 ```
 
-#### 对象和数组的解构语法
+### 对象和数组的解构语法
 
 解构语法 支持默认值
 
@@ -44,7 +44,7 @@ name // cx33
 age // 18
 ```
 
-#### var/let/const
+### var/let/const
 
 创建的变量会被保存到 VariableMap 里面 - V8引擎
 
@@ -67,7 +67,7 @@ age // 18
 
 1. 声明常量 值（引用 - 内存地址）不可修改
 
-#### 块级作用域
+### 块级作用域
 
 ES5 只有全局作用域和函数作用域，没有块级作用域
 
@@ -87,7 +87,7 @@ if (true) {
 }
 ```
 
-#### 模板字符串
+### 模板字符串
 
 方便，可读性高
 
@@ -103,7 +103,7 @@ console.log`age: ${18}?${'cx33'}` // [ 'age: ', '?', '' ] 18 cx33
 
 应用：React styled-components
 
-#### 函数的默认参数
+### 函数的默认参数
 
 ```js
 function foo(x, y = 1 /* ES6 */) {
@@ -115,7 +115,7 @@ foo(1)
 foo(1, 2)
 ```
 
-#### 函数的剩余参数
+### 函数的剩余参数
 
 替代 `arguments`
 
@@ -129,13 +129,13 @@ function foo(x, ...y) {
 foo(1, 2, 3, 4)
 ```
 
-#### 箭头函数
+### 箭头函数
 
 - 箭头函数没有自己的 `this` 对象
 - 不能作为构造函数 没有显式原型
 - 没有 `arguments` 对象
 
-#### 展开语法
+### 展开语法
 
 ```js
 function foo(x, y, z) {}
@@ -163,7 +163,7 @@ obj.link.url = 'bbb'
 console.log(info.link.url) // 'bbb'
 ```
 
-#### 数值的表示
+### 数值的表示
 
 - 二进制和八进制表示法
 
@@ -184,7 +184,7 @@ console.log(info.link.url) // 'bbb'
 const big = 10_000_000_000
 ```
 
-#### Symbol
+### Symbol
 
 生成独一无二的值
 
@@ -206,7 +206,7 @@ s3 === s4
 
 在 `Object.keys` 遍历的时候 获取不到，需要通过 `Object.getOwnPropertySymbols(obj)` 获取
 
-#### Set 数据结构
+### Set 数据结构
 
 ```js
 const set = new Set()
@@ -236,7 +236,7 @@ const arr2 = [...new Set(arr1)]
 arr2 // [1, 2, 3, 4]
 ```
 
-#### WeakSet
+### WeakSet
 
 只存放对象类型，不存放基本数据类型
 
@@ -244,5 +244,15 @@ arr2 // [1, 2, 3, 4]
 
 WeakSet 没有 `size` 属性，没有办法遍历它的成员
 
-#### Map
+### Map
 
+对象类型作为 `key` 值
+
+```js
+const map = new Map()
+const obj1 = { name: 1 }
+const obj2 = { name: 2 }
+map.set(obj1, "o1")
+map.set(obj2, "o2")
+map // Map(2) { { name: 1 } => 'o1', { name: 2 } => 'o2' }
+```
