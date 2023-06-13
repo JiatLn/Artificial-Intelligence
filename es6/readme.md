@@ -255,4 +255,11 @@ const obj2 = { name: 2 }
 map.set(obj1, "o1")
 map.set(obj2, "o2")
 map // Map(2) { { name: 1 } => 'o1', { name: 2 } => 'o2' }
+map.size // 2
+map.get(obj1) // o1
+map.has(obj2) // true
+map.delete(obj1) // true
+map.size // 1
+map.clear()
+map.size // 0
 ```
